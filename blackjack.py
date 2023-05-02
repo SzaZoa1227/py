@@ -1,7 +1,7 @@
 import random as r
 import os
 import time as t
-os.system("clear")
+os.system("cls")
 kartyakErteke = {
     "2": 2,
     "3": 3,
@@ -53,14 +53,14 @@ while True:
         print("Blackjack! Gratulálok, nyertél!")
         pakliKiirasa(jatekosKartyai)
         t.sleep(5)
-        os.system("clear")
+        os.system("cls")
         break
     elif kezbenTartottKartyakErteke(jatekosKartyai) > 21:
         print("21-en túlment a kártyáid értéke. Veszítettél.")
         pakliKiirasa(jatekosKartyai)
         pakliKiirasa(gepKartyai)
         t.sleep(5)
-        os.system("clear")
+        os.system("cls")
         break
     else:
         valasz = input("Szeretnél új kártyát vagy nem? I/N").lower()
@@ -75,22 +75,22 @@ if kezbenTartottKartyakErteke(jatekosKartyai) <= 21:
     pakliKiirasa(jatekosKartyai)
     print(f"A gép kártyáinak a száma: {len(gepKartyai)}")
     t.sleep(5)
-    os.system("clear")
+    os.system("cls")
     if kezbenTartottKartyakErteke(gepKartyai) > 21:
         print("A gép kártyáinak értéke túlment 21-en. Gratulálok, nyertél!")
         pakliKiirasa(gepKartyai)
         t.sleep(5)
-        os.system("clear")
+        os.system("cls")
     elif kezbenTartottKartyakErteke(gepKartyai) >= kezbenTartottKartyakErteke(jatekosKartyai):
         print("A gépnek a kárytái meghaladják a te kártyáid értékét. Veszítettél.")
         pakliKiirasa(gepKartyai)
         pakliKiirasa(jatekosKartyai)
         t.sleep(5)
-        os.system("clear")
+        os.system("cls")
     else:
         print(
             "A kártyáid értéke meghaladja a gép kártyáinak az értékét! Gratulálok, nyertél!")
         pakliKiirasa(gepKartyai)
         pakliKiirasa(jatekosKartyai)
         t.sleep(5)
-        os.system("clear")
+        os.system("cls")

@@ -1,6 +1,6 @@
 import random as r
 
-generaltSzam = r.randint(1, 1000)
+generaltSzam = r.randint(1, 10)
 probalkozasokSzama = 0
 kapottTippet = False
 
