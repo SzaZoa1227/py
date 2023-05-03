@@ -6,7 +6,7 @@ def fibonacciSorozat(szam):
     else:
         return (fibonacciSorozat(szam - 1) + fibonacciSorozat(szam - 2))
 
-i = int(input("Mennyi értéket írjunk ki?"))
+i = int(input("Mennyi értéket írjunk ki?    "))
 print("Fibonacci sorozat:")
 for i in range(0, i):  
-   print(fibonacciSorozat(i))
+   print(f"{i+1}. {fibonacciSorozat(i):,}")
