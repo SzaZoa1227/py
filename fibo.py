@@ -1,12 +1,18 @@
 def fibonacciSorozat(szam):
-    if(szam == 0):
+    if szam == 0:
         return 0
-    elif(szam == 1):
+    if szam == 1:
         return 1
-    else:
-        return (fibonacciSorozat(szam - 1) + fibonacciSorozat(szam - 2))
+    a = 0
+    b = 1
+    for _ in range(2, szam + 1):
+        c = a + b
+        a = b
+        b = c
+    return b
 
-i = int(input("Mennyi értéket írjunk ki?    "))
+
+mennyi = int(input("Mennyi értéket írjunk ki?    "))
 print("Fibonacci sorozat:")
-for i in range(0, i):  
-   print(f"{i+1}. {fibonacciSorozat(i):,}")
+for sorszam in range(mennyi):
+    print(f"{sorszam+1}. {fibonacciSorozat(sorszam):,}")

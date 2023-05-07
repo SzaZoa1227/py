@@ -1,3 +1,4 @@
+"""hisztizik a vscodeee"""
 import random
 import time
 import os

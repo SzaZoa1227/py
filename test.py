@@ -1,3 +1,4 @@
+"""hisztizik a vscodeee"""
 import os
 import time
 while True:

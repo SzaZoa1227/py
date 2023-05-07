@@ -1,3 +1,4 @@
+"""hisztizik a vscodeee"""
 import random
 import time
 import os
@@ -42,5 +43,3 @@ while True:
     ujjatek = input("Új játék? (I/N) ").lower()
     if ujjatek != "i":
         break
-    """kiírja a két változó helyére a pontok lista első és második értékét sorrendben
-                            (.format stringgé alakítja)"""

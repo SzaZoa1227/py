@@ -1,5 +1,4 @@
-import time
-import math
+"""hisztizik a vscodeee"""
 import os
 os.system("cls")
 start = 2

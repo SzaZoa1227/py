@@ -1,10 +1,10 @@
+"""hisztizik a vscodeee"""
 import random as r
-
 generaltSzam = r.randint(1, 10)
 probalkozasokSzama = 0
 tippekSzama = 0
 while True:
-    tipp = int(input(f"Ide írd a tipped 1 és 10 között: "))
+    tipp = int(input("Ide írd a tipped 1 és 10 között: "))
     tippekSzama += 1
     if tipp == generaltSzam:
         print(f"Gratulálok kitaláltad a számot {tippekSzama} próbálkozásokból")
@@ -14,5 +14,6 @@ while True:
     else:
         print("A tipped kissebb mint a generált szám, próbáld újra")
     if tippekSzama == 4:
-        print(f"Próbálkozásaid száma meghaladta a {tippekSzama} értéket, veszítettél.")
+        print(
+            f"Próbálkozásaid száma meghaladta a {tippekSzama} értéket, veszítettél.")
         break

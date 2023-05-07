@@ -1,3 +1,4 @@
+"""hisztizik a vscodeee"""
 import random as r
 import os
 import time as t

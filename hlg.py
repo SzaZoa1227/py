@@ -1,3 +1,4 @@
+"""hisztizik a vscodeee"""
 import random as r
 
 generaltSzam = r.randint(1, 10)
@@ -13,7 +14,7 @@ while True:
         print(
             f"Gratulálok! Eltaláltad a generált számot {probalkozasokSzama} próbálkozásból!")
         break
-    elif tipp < generaltSzam:
+    if tipp < generaltSzam:
         print("A generált szám nagyobb mint a tipped. Próbáld újra!")
     else:
         print("A generált szám kisebb mint a tipped. Próbáld újra!")
