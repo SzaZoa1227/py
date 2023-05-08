@@ -1,4 +1,3 @@
-"""hisztizik a vscodeee"""
 import random as r
 import os
 import time as t
@@ -25,19 +24,19 @@ def pakliKiirasa(kinek):
     if kinek == gepKartyai:
         print(f"A gép kártyái: {gepKartyai}")
     else:
-        print(f"A te kártyáid: {jatekosKartyai}")
+        print(f"A te kártyáid: {jatekosKartyai}, értékük: {kezbenTartottKartyakErteke(jatekosKartyai)}")
 
 
-def kezbenTartottKartyakErteke(hand):
+def kezbenTartottKartyakErteke(kez):
     ertek = 0
     aszokSzama = 0
-    for card in hand:
-        ertek += kartyakErteke[card]
-        if card == "A":
+    for kartya in kez:
+        ertek += kartyakErteke[kartya]
+        if kartya == "A":
             aszokSzama += 1
-    while ertek > 21 and aszokSzama > 0:
+    while ertek > 21 and aszokSzama > 0:    #ha az ásszal a kártyák értéke túlmegy a 21en, levonja az ászt és 10 pontot
         ertek -= 10
-        aszokSzama -= 1
+        aszokSzama -= 1 
     return ertek
 
 
@@ -89,8 +88,7 @@ if kezbenTartottKartyakErteke(jatekosKartyai) <= 21:
         t.sleep(5)
         os.system("cls")
     else:
-        print(
-            "A kártyáid értéke meghaladja a gép kártyáinak az értékét! Gratulálok, nyertél!")
+        print("A kártyáid értéke meghaladja a gép kártyáinak az értékét! Gratulálok, nyertél!")    
         pakliKiirasa(gepKartyai)
         pakliKiirasa(jatekosKartyai)
         t.sleep(5)
