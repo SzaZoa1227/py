@@ -1,4 +1,3 @@
-"""hisztizik a vscodeee"""
 import random as r
 
 generaltSzam = r.randint(1, 10)
