@@ -1,2 +1,2 @@
 # py
-úúúúristen, iderakom a python feladatokat amit suliba meg otthon csinálok :ooo
+úúúúristen, iderakom a python feladatokat amit suliba meg otthon csinálok 💯
