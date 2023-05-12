@@ -23,5 +23,6 @@ while True:
         print("Kérsz segítséget? (i/n)")
         valasz = input()
         if valasz.lower() == "i":
-            print(
-                f"A generált szám {generaltSzam - r.randint(1,25)} és {generaltSzam + r.randint(1,25)} között van.")
+            print(f"A generált szám {generaltSzam - r.randint(1,25)} és {generaltSzam + r.randint(1,25)} között van.")
+
+                
