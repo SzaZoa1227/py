@@ -78,7 +78,7 @@ if kezbenTartottKartyakErteke(jatekosKartyai) <= 21:
     os.system("cls")
     if kezbenTartottKartyakErteke(gepKartyai) > 21:
         print("A gép kártyáinak értéke túlment 21-en. Gratulálok, nyertél!")
-        pakliKiirasa(gepKartyai)
+        print(f"{pakliKiirasa(gepKartyai)} Értékük: {kezbenTartottKartyakErteke(gepKartyai)}")
         t.sleep(5)
         os.system("cls")
     elif kezbenTartottKartyakErteke(gepKartyai) >= kezbenTartottKartyakErteke(jatekosKartyai):
