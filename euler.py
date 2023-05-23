@@ -1,11 +1,11 @@
-import math as m
+from math import factorial
 def eulerGeneralas(n, memo={}):
     if n in memo:
         return memo[n]
     if n == 0:
         return 1
 
-    e = eulerGeneralas(n-1, memo) + 1 / m.factorial(n)
+    e = eulerGeneralas(n-1, memo) + 1 / factorial(n)
     memo[n] = e
 
     return e

@@ -1,3 +1,5 @@
+import sys
+sys.set_int_max_str_digits(99999)
 HANYADIK = int(input("Fibonacci sorozat hanyadik értékét írjuk ki?  "))
 if HANYADIK == 1:
     print(f"A fibonacci sorozat {HANYADIK}. eleme a 0")
