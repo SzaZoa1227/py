@@ -1,7 +1,7 @@
 def fibonacciSorozat(szam):
     if szam == 0:
         return 0
-    if szam == 1:
+    elif szam == 1:
         return 1
     a = 0
     b = 1
