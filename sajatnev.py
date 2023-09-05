@@ -1,0 +1,1 @@
+print("Szabó\nZoárd")
