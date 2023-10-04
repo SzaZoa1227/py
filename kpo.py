@@ -38,7 +38,6 @@ while True:
         print("A gép nyert.")
         pontok[1] += 1
 
-    print("pontok: Te {} - {} Gép".format(pontok[0], pontok[1]))
-    ujjatek = input("Új játék? (I/N) ").lower()
-    if ujjatek != "i":
-        break
+    print(f"pontok: Te {pontok[0]} - {pontok[1]} Gép")
+    ujjatek = ""
+    
