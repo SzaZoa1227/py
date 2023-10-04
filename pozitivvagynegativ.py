@@ -1,4 +1,3 @@
-"""hisztizik a vscode"""
 import random as rng
 import os
 os.system("cls")

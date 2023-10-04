@@ -1,6 +1,5 @@
 osszpont = int(input("Írd be az összpontszámot:     "))
 elertPontszam = int(input("Írd be az elért pontszámot:      "))
-
 szazalek = int((elertPontszam/osszpont)*100)
 if szazalek < 40:
     print(f"{szazalek}%, Elégtelen(1)")
