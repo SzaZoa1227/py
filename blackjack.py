@@ -44,8 +44,8 @@ r.shuffle(pakli)
 
 jatekosKartyai = [pakli.pop(), pakli.pop()]
 gepKartyai = [pakli.pop()]
-
-while True:
+game = True
+while game == True:
     pakliKiirasa(jatekosKartyai)
     print(f"Gép kártyáinak száma: {len(gepKartyai)}")
     t.sleep(5)
@@ -54,20 +54,20 @@ while True:
         pakliKiirasa(jatekosKartyai)
         t.sleep(5)
         os.system("cls")
-        break
+        game = False
     elif kezbenTartottKartyakErteke(jatekosKartyai) > 21:
         print("21-en túlment a kártyáid értéke. Veszítettél.")
         pakliKiirasa(jatekosKartyai)
         pakliKiirasa(gepKartyai)
         t.sleep(5)
         os.system("cls")
-        break
+        game = False
     else:
         valasz = input("Szeretnél új kártyát vagy nem? I/N").lower()
         if valasz == "i":
             jatekosKartyai.append(pakli.pop())
         elif valasz == "n":
-            break
+            game = False
 
 if kezbenTartottKartyakErteke(jatekosKartyai) <= 21:
     while kezbenTartottKartyakErteke(gepKartyai) < 17:

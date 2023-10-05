@@ -1,6 +1,3 @@
-"""hisztizik a vscodeee"""
-import os
-os.system("cls")
 start = 2
 stop = 22
 step = 2
