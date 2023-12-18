@@ -1,11 +1,10 @@
 import random as r
-sorsolas = True
-nyeroSzamok = [0,0,0,0,0,0,0]
-while sorsolas == True:
-    kerdes = input("Mehet a sorsolás? i/n   ")
-    if kerdes == "i":
-        for i in range(0,7):
-            nyeroSzamok[i] = r.randint(1,35)
-        print(nyeroSzamok)
+szamok = []
+while len(szamok) < 7:
+    bele = r.randint(1,35)
+    if bele in szamok:
+        print("Van ismetlodes")
+        continue
     else:
-        sorsolas = False
+        szamok.append(bele)
+print(sorted(szamok))
